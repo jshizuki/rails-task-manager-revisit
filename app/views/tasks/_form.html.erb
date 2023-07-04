@@ -3,5 +3,10 @@
   <%= f.text_field :title, class: 'form-control form-control-lg mb-3'%>
   <%= f.label :details %>
   <%= f.text_field :details, class: 'form-control form-control-lg mb-3' %>
+  <% unless f.object.new_record? %>
+    <%= f.check_box :completed %>
+    <%= f.label :completed %><br>
+  <% end %>
   <%= f.submit class: 'btn btn-success btn-large' %>
 <% end %>
+

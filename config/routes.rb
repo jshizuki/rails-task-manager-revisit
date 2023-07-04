@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'tasks/:id', to: 'tasks#show', as: :task
 
   # As a user, I can edit a task
-  get 'tasks/:id/edit', to: 'tasks#edit', as: :edit_task # still need to show the form
+  get 'tasks/:id/edit', to: 'tasks#edit', as: :edit_task
   patch 'tasks/:id', to: 'tasks#update'
 
   # As a user, I can remove a task
