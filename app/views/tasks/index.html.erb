@@ -12,6 +12,9 @@
                 <i class="fa-sharp fa-regular fa-circle"></i>
               <% end %>
               <%= link_to task.title, task_path(task), class: 'text-decoration-none link-secondary' %>
+              <%= link_to task_path(task), data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}, class: 'text-secondary' do %>
+                <i class="fa-regular fa-trash-can"></i>
+              <% end %>
             </p>
           </li>
         <% end %>
