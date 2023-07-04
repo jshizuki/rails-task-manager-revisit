@@ -3,9 +3,7 @@
   <%= f.text_field :title, class: 'form-control form-control-lg mb-3'%>
   <%= f.label :details, class: 'fs-4' %>
   <%= f.text_field :details, class: 'form-control form-control-lg mb-3' %>
-  <% unless f.object.new_record? %>
-    <%= f.check_box :completed %>
-    <%= f.label :completed %><br>
-  <% end %>
+  <%= f.check_box :completed %>
+  <%= f.label :completed, class: 'fs-4' %><br>
   <%= f.submit class: 'btn btn-success btn-large fs-4' %>
 <% end %>
