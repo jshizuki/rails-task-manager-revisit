@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_02_043203) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_27_102001) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "tasks", force: :cascade do |t|
+  create_table "tmanager_tasks", force: :cascade do |t|
     t.string "title"
     t.text "details"
     t.boolean "completed", default: false

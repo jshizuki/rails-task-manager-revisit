@@ -9,6 +9,6 @@
       <%= f.check_box :completed%>
       <%= f.label :completed, class: 'fs-4' %><br>
     <% end %>
-    <%= f.submit class: 'btn btn-success btn-large fs-4 mt-2' %>
+    <%= f.submit @task.new_record? ? 'Create task' : 'Update task', class: 'btn btn-success btn-large fs-4 mt-2' %>
   <% end %>
 </div>
